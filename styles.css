@@ -1,0 +1,222 @@
+/* Reset para márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+.info-club{
+    text-align: center;
+}
+.info-club h1{
+    font-size: 50px;
+    color: #F7D400;
+}
+.info-club p{
+    color: white;
+    font-size: 22px;
+    max-width: 1150px;  
+    margin: 0 auto;     
+    line-height: 1.6;   
+}
+.info-club img{
+  height: 300px;
+  width: 650px;
+  box-shadow: 0 0 22px rgb(255, 255, 255);
+}
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #0e0e0e;
+  color: #333;
+    
+  }
+  
+  header {
+    background-color: #0d009c;
+    color: #F7D400;
+    padding: 15px;
+  }
+  
+  a {
+    color: #0d009c;
+  }
+  
+  a:hover {
+    color: #ff0000;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar img{
+    height: 60px;
+    width: 90px;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: #F7D400;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .nav-links a:hover, .nav-links .active {
+    border-bottom: 4px solid #F7D400;
+    color: #ff0000;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+  }
+
+  .competencias{
+    text-align: center;
+}
+.competencias img{
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 0 5px rgb(255, 255, 0);
+    border-radius: 10%;
+}
+.competencias h2{
+    font-size: 45px;
+    color: #ff0000;
+}
+.competencias p{
+  color: white;
+  max-width: 600px;  
+  margin: 0 auto;     
+  line-height: 1.6;   
+}
+
+  /* Estilos para el contenido principal */
+  main {
+    padding: 20px;
+  }
+  main h1{
+    text-align: center;
+    color: #F7D400;
+  }
+main h2{
+  color: #A50021;
+}
+
+  .main-jugadores h2{
+    color: #ff0000;
+    font-size: 40px;
+  }
+
+  h1, h2 {
+    margin-bottom: 15px;
+  }
+  
+  footer {
+    background-color: #0d009c;
+    color: #F7D400;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
+  /* Estilos específicos para cada sección */
+  .jugadores-grid, .trofeos-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+  }
+  
+  .jugador, .trofeo {
+    background-color: #FFFFFF; 
+    border: 5px solid #003366; 
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(255, 225, 0);
+  }
+  
+  .jugador img, .trofeo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .jugador h2{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+  color: #626365;
+  }
+  .jugador h2 b{
+    font-size: 20px;
+    color: #0d009c;
+  }
+  
+  .trofeo h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+  color: #003366;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li {
+    margin: 5px 0;
+  }
+  
+  /* Estilos para el responsive (para pantallas pequeñas) */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      width: 100%;
+    }
+  
+    .nav-links li {
+      margin-left: 0;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links.active {
+      display: block;
+    }
+  
+    .jugadores-grid, .trofeos-grid {
+      grid-template-columns: 1fr;
+    }
+    .info-club img{
+      width: 100%;
+      height: 50%;
+    }
+    .info-club p{
+      font-size: 15px;
+  }
+    
+  }
